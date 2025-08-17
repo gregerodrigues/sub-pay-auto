@@ -54,3 +54,10 @@ Uniswap Strategy Adapter: Allocates PYUSD → LP → tracks yield.
 PayPal USD: Token for micro-top-ups, payments, and merchant settlement.
 
 ⚡ SubPay AI = Seamless UX (PYUSD) + Composable Infra (Flow) + Real Yield (Uniswap)
+
+
+FeeSplitHook : https://unichain-sepolia.blockscout.com/address/0x76c721f567c6410d2E19277228241B23a1F68040 
+LPWithFEESplit: https://unichain-sepolia.blockscout.com/tx/0x5924f6cf4d79bedefd3f5da4e86787a09a8a00054f4557c145f9b3cb065dc66d  
+SimpleFeeShareHook: https://unichain-sepolia.blockscout.com/tx/0x9e3270f234d6dc4e2ebd8a51fedce044f925550d1846601535ef693b007c79a8  
+LPWITHSimpleFeeShare :https://unichain-sepolia.blockscout.com/tx/0x80b2c7d0ec322cf5950a1846eae43ca7b1168225f89ff9e1899cd9ec58ba8f64  
+AutoCompoundHook(PYUSD /WETH) : https://sepolia.etherscan.io/tx/0xf641cc39573ed9801055c196f6e386f7b41de50254f1dd1b9997ef233de500a1
