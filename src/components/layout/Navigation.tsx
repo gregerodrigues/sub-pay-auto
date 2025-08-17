@@ -18,7 +18,7 @@ const Navigation = () => {
   } = useDemoStore();
 
   const navLinks = [
-    { href: '/demo', label: 'Demo', icon: Zap },
+    { href: '/demo/netflix-checkout', label: 'Demo', icon: Zap },
     { href: '/learn', label: 'How it works', icon: BookOpen },
     { href: '/app', label: 'Dashboard', icon: CreditCard },
   ];
