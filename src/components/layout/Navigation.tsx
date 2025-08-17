@@ -19,14 +19,8 @@ const Navigation = () => {
 
   const navLinks = [
     { href: '/demo', label: 'Demo', icon: Zap },
-    { href: '/app', label: 'App', icon: CreditCard },
-    { href: '/app/activity', label: 'Activity', icon: Activity },
-    { href: '/app/funding', label: 'Funding', icon: Wallet },
-    { href: '/app/strategies', label: 'Strategies', icon: TrendingUp },
-    { href: '/app/settings', label: 'Settings', icon: Settings },
-    { href: '/learn', label: 'Learn', icon: BookOpen },
-    { href: '/support', label: 'Support', icon: HelpCircle },
-    { href: '/actions', label: 'Actions', icon: Zap },
+    { href: '/learn', label: 'How it works', icon: BookOpen },
+    { href: '/app', label: 'Dashboard', icon: CreditCard },
   ];
 
   return (
