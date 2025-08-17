@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+SubPay AI — Your Subscriptions Pay Themselves
 
-## Project info
+SubPay AI is a consumer dApp that lets users pay subscriptions (Netflix, Spotify, etc.) in PayPal USD (PYUSD) while automatically micro-saving and investing small amounts to offset future bills.
 
-**URL**: https://lovable.dev/projects/3dccced9-dbee-4242-b631-be85473effec
+The experience is simple:
 
-## How can I edit this code?
+Pay subscription in PYUSD.
 
-There are several ways of editing your application.
+Auto-allocate a micro-save ($2–$5).
 
-**Use Lovable**
+Funds earn yield in a Uniswap strategy.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3dccced9-dbee-4242-b631-be85473effec) and start prompting.
+Dashboard shows “% of next bill covered” and auto-pays when due.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+This project integrates three ETHGlobal New York 2025 bounties:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔹 PayPal USD (PYUSD)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Primary payment & micro-saving unit.
 
-Follow these steps:
+Users pay subscriptions directly in PYUSD.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Demonstrates innovative programmable payments & consumer checkout.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🔹 Flow (EVM + Actions)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Smart contracts deployed on Flow EVM for plan registry, vault routing, and payouts.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Exposed as Flow Actions so any agent/app can compose: TopUp → Allocate → Redeem → Pay.
 
-**Edit a file directly in GitHub**
+Fast, low-cost, composable rails for our automated subscription engine.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🔹 Uniswap
 
-**Use GitHub Codespaces**
+Used as the yield offset layer.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Micro-saves are allocated into a Uniswap liquidity pool strategy (low-vol stable LP).
 
-## What technologies are used for this project?
+Yield feeds the “coverage %” metric shown in the dashboard and auto-applied to future bills.
 
-This project is built with:
+🛠️ Integration at a Glance
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Frontend (Next.js + Tailwind): User dashboard, top-ups, yield tracking.
 
-## How can I deploy this project?
+BFF Gateway (API routes): Normalizes UI calls → Plan Service, Yield Service, Payout Service.
 
-Simply open [Lovable](https://lovable.dev/projects/3dccced9-dbee-4242-b631-be85473effec) and click on Share -> Publish.
+Flow Contracts: PlanRegistry, VaultRouter, PayoutModule deployed on Flow EVM.
 
-## Can I connect a custom domain to my Lovable project?
+Flow Actions: JSON-defined, composable building blocks for automation.
 
-Yes, you can!
+Uniswap Strategy Adapter: Allocates PYUSD → LP → tracks yield.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+PayPal USD: Token for micro-top-ups, payments, and merchant settlement.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+⚡ SubPay AI = Seamless UX (PYUSD) + Composable Infra (Flow) + Real Yield (Uniswap)
