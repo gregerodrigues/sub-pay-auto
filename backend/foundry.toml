@@ -1,0 +1,15 @@
+[profile.default]
+evm_version = "cancun"
+ffi = true
+fs_permissions = [{access = "read-write", path = ".forge-snapshots/"}]
+libs = ["lib"]
+out = "out"
+solc_version = "0.8.26"
+src = "src"
+
+
+[rpc_endpoints]
+unichain = "https://unichain-sepolia.infura.io/v3/1c7e544b92244a92a5505903fae8a579"
+sepolia = "https://sepolia.infura.io/v3/1c7e544b92244a92a5505903fae8a579"
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
